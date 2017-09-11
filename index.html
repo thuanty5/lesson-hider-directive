@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+ <html ng-app="lessonApp">
+
+    <head>
+        <title>Lesson Hider</title>
+    </head>
+
+    <body ng-controller="lessonCtrl">
+
+        <ul>
+            <lesson-hider ng-repeat="lesson in lessons" lesson="lesson"></lesson-hider>
+        </ul>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+        <script src="./app.js"></script>
+        <script src="./lessonCtrl.js"></script>
+        <script src="lessonService.js"></script>
+        <script src="lessonHider.js"></script>
+    </body>
+
+ </html>
